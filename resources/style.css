@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.grid-container {
+  margin: auto 72px;
+}
+.header {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.button-container button {
+  background: none;
+  border-radius: 2rem;
+  padding: 12px 32px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #4138c2;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #e5e7eb;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3.5rem;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-bottom: 36px;
+  align-items: center;
+  justify-items: center;
+}
+.main-text {
+  grid-column: 1 / span 6;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.main-text h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+.main-text p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #121826;
+}
+.color {
+  color: #4138c2;
+}
+.buttons {
+  display: flex;
+  column-gap: 12px;
+}
+.button {
+  cursor: pointer;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 2rem;
+  outline: none;
+  background: none;
+}
+.fill {
+  border: none;
+  background-color: #4138c2;
+  color: white;
+}
+.unfill {
+  border: 2px solid #e5e7eb;
+  color: #4138c2;
+}
+.main-image {
+  grid-column: 7 / span 6;
+}
+.main-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main-2 {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  margin-bottom: 72px;
+}
+.heading-c {
+  display: flex;
+  justify-content: center;
+}
+.main-2 h1 {
+  text-align: center;
+  max-width: 35%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.icon-grid {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 4rem;
+}
+.card{
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.icon-container{
+ height: 72px;
+ width: 72px;
+ border-radius: 1rem; 
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.card h3{
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+#c1 .icon-container{
+  background-color: #C9D2FA;
+}
+#c1 span{
+  color: #4138c2;
+}
+#c2 .icon-container{
+  background-color: #D5FAF1;
+}
+#c2 span{
+  color: #5EC269;
+}
+#c3 .icon-container{
+  background-color: #FBE5E6;
+}
+#c3 span{
+  color: #E14F62;
+}
+#c4 .icon-container{
+  background-color: #FDF9C9;
+}
+#c4 span{
+  color: #E2B53E;
+}
+#c5 .icon-container{
+  background-color: #FCEED8;
+}
+#c5 span{
+  color: #E87B35;
+}
+#c6 .icon-container{
+  background-color: #DEE9FC;
+}
+#c6 span{
+  color: #4E80EE;
+}
+#c7 .icon-container{
+  background-color: #F1E8FD;
+}
+#c7 span{
+  color: #9D59EF;
+}
+#c8 .icon-container{
+  background-color: #E2FBE8;
+}
+#c8 span{
+  color: #52B3D0;
+}
+.main-3{
+  min-height: 520px;
+  padding-top: 188px;
+  padding-bottom: 164px;
+  background-image: url('./footer_background_image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+.m3flex{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  
+}
+.m3flex h1{
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1.5;
+  text-align: center;
+}
+.button.fill.mb{
+   padding: 18px 48px;
+}
+
+.footer{
+  padding: 24px 72px;
+  background-color: #121826;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.footer p{
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 1024px){
+  .main-2 h1 {
+    max-width: 45%;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .grid-container{
+    margin: auto 2rem;
+  }
+  .main-content{
+    grid-template-rows: auto 1fr;
+    gap: 2rem;
+  }
+  .main-text{
+    grid-row: 2/span 1;
+    grid-column: 1/span 12;
+  }
+  .main-image{
+    grid-row: 1/span 1;
+    grid-column: 1/span 12;
+  }
+  .main-2 h1 {
+    max-width: 65%;
+  }
+  .card{
+    grid-column: span 6;
+  }
+}

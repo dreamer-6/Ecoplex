@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Be Vietnam Pro", sans-serif;
+    --purple:#4138c2;
+    --border-outer:#aaacb0;
+}
+main{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden; 
+}
+/* header section*/
+header{
+    background-color: aquamarine;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 6em;
+}
+nav img{
+    width: 50px;
+    height: 50px;
+}
+#connect{
+    background-color: #fff;
+    padding: 1em 2.2em;
+    border: 1px solid var(--border-outer);
+    border-radius: 50px;
+    font-size: 1.2rem;
+    color: var(--purple);
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+#connect:hover{
+    background-color: var(--purple);
+    color: #fff;
+}
+/*hero section*/
+#hero{
+    padding: 0 6em;
+    height: auto;
+    background-color: #8b8d90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero-info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#hero-info h1{
+    font-size: 2.5rem;
+    margin-right: 3em;
+    padding: 1em 0;
+}
+#hero-info p{
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin-right: 2em;
+}
+.hero-button{
+    background-color: #fff;
+    padding: 1em 2.2em;
+    border: 1px solid var(--border-outer);
+    border-radius: 50px;
+    font-size: 1.2rem;
+    color: var(--purple);
+    font-weight: 700;
+    transition: all 0.2s ease;
+    margin: 2em 1em 0 0;
+}
+.active{
+    background-color: var(--purple);
+    color: #fff;
+}
+.hero-button:hover{
+    box-shadow: 5px 5px 10px var(--border-outer);
+}
+#hero-img{
+    width: 100%;
+}
+#hero-img img{
+    width: 100%;
+    object-fit: contain;
+
+}
+/* 2nd section */
+#features{
+    background-color: #aaacb0;
+    width: 100%;
+    padding: 5em;
+}
+.feature-title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2em auto;
+    max-width:500px;
+}
+#features{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 50px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+}
+.feature img{
+    width: 50px;
+    padding: 1em;
+    border-radius: 15px;
+}
+.title{
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 0.7em 0 0.3em;
+    color: var(--purple);
+}
+.subtitle{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+/* separete image background coloring*/
+.monster img{
+    background-color: #c9d2fa;
+}
+.gear img{
+    background-color: #d5faf1;
+}
+.theater img{
+    background-color: #fbe5e6;
+}
+.design img{
+    background-color: #fdf9c9;
+}
+.community img{
+    background-color: #fceed8;
+}
+.artist img{
+    background-color: #dee9fc;
+}
+.edu img{
+    background-color: #f1e8fd;
+}
+.tech img{
+    background-color: #e2fbe8;
+}
+/* sparate text coloring*/
+.gear-title{
+    color: #5ec269;
+}
+.theater-title{
+    color: #e14f62;
+}
+.design-title{
+    color: #e2b53e;
+}
+.comm-title{
+    color: #e97b35;
+}
+.artist-title{
+    color: #4e80ee;
+}
+.edu-title{
+    color: #9d59ef;
+}
+.tech-title{
+    color: #52b3d0;
+}
+/*3rd section*/
+#start{
+    width: 100%;
+    height: 500px;
+    background: url(resources/footer_background_image.png) no-repeat center fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.journey{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15em;
+}
+.journey h2{
+    font-size: 3rem;
+    max-width: 600px;
+}
+.journey .active:hover{
+    background-color: #fff;
+    color: var(--purple);
+}
+/* footer section*/
+footer{
+    background-color:#121826 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+footer p{
+    color: #b0b2b7;
+    display: inline;
+    margin-right: 1em;
+}
+a{ 
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+    font-size:1.2rem ;
+}
