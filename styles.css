@@ -62,6 +62,9 @@ nav img{
     max-width: 700px;
     margin-right: 2em;
 }
+.highlight{
+    color: var(--purple);
+}
 .hero-button{
     background-color: #fff;
     padding: 1em 2.2em;
